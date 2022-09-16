@@ -31,7 +31,7 @@ tei-div{
   padding-bottom: 20px;
   display: block;
   border-style: dotted;
-  background-color: burlywood;
+  background-color:darkseagreen;
   margin-bottom: 10px;
 }
 
@@ -86,6 +86,6 @@ tei-lb::before{
 
 tei-signed{
   font-size: 200%;
-  color:indigo;
+  color:darkmagenta;
   font-family: 'Ms Madi', cursive;
 }
