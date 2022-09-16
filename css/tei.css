@@ -1,16 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Ms+Madi&display=swap');
+
 body {
   font-size: 12pt;
+  max-width: 600px;
+  margin:auto;
+  padding: 20px;
+
 }
 
 tei-body {
   
 }
 
+
 tei-head {
   display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+  padding: 30px;
 }
 
 tei-p {
   display: block;
 }
+tei-div{
+  padding-top: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  display: block;
+  border-style: dotted;
+  background-color: burlywood;
+  margin-bottom: 10px;
+}
 
+tei-div[type="manuscrito"]{
+  font-family: 'Homemade Apple', cursive;
+}
+
+tei-div[type="impreso"]{
+  font-family: monospace;
+  font-size: 80%;
+
+}
+tei-head tei-persname {
+  font-variant: normal;
+}
+
+tei-foreign{
+  text-decoration: underline;
+}
+
+tei-abbr{
+  display: none;
+}
+
+tei-corr{
+  color:cornflowerblue;
+  font-weight: bold;
+}
+
+tei-del{
+  color:crimson;
+  text-decoration: line-through;
+}
+
+tei-add{
+  color:darkgreen;
+}
+
+tei-gap{
+  background-color: black;
+}
+
+tei-gap::before{
+  content: " ";
+  white-space: pre;
+}
+
+tei-lb::before{
+  white-space: pre;
+  content: "\A";
+}
+
+tei-signed{
+  font-size: 200%;
+  color:indigo;
+  font-family: 'Ms Madi', cursive;
+}
